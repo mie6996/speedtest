@@ -73,7 +73,6 @@ speed() {
     speed_test '17758' 'VNPT-NET, HCM'
     speed_test '26853' 'Viettel Network, HCM'
     speed_test '2515' 'FPT Telecom, HCM'
-    speed_test '17758' 'VNPT-NET, HCM'
     speed_test '14236' 'Frontier, LA'
     speed_test '46120' 'New York, NY'
     speed_test '40879' 'i3D.net, CA'
