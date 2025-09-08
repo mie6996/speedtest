@@ -237,8 +237,6 @@ install_speedtest() {
 
 print_intro() {
     echo "-------------------- Kiểm tra tốc độ máy chủ ------------------------------"
-    echo " Version            : $(_green v2023-04-08)"
-    echo " Usage              : $(_red "curl -Lso- vietpn.co | bash")"
 }
 
 # Get System information
