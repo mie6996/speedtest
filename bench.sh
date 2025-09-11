@@ -72,12 +72,8 @@ speed_test() {
 speed() {
     speed_test '17758' 'VNPT-NET, HCM'
     speed_test '26853' 'Viettel Network, HCM'
+    speed_test '55436' 'MobiFone, HCM'  
     speed_test '2515' 'FPT Telecom, HCM'
-    speed_test '14236' 'Frontier, LA'
-    speed_test '46120' 'New York, NY'
-    speed_test '40879' 'i3D.net, CA'
-    speed_test '48390' 'Marseille, FR'
-    speed_test '18607' 'Taiwan, TW'
     speed_test '37390' 'HGC, HK'
     speed_test '44745' 'Misaka, HK'
     speed_test '47845' 'HK Broadband, HK'
@@ -89,9 +85,14 @@ speed() {
     speed_test '4235' 'Starhub, SG'
     speed_test '5935' 'MyRepublic, SG'
     speed_test '2054' 'ViewQwest, SG'
+    speed_test '18607' 'Taiwan, TW'
     speed_test '24333' 'Rakuten, JP'
     speed_test '50686' 'GSL, JP'
     speed_test '21569' 'i3D.net, JP'
+    speed_test '14236' 'Frontier, LA'
+    speed_test '40879' 'i3D.net, CA'
+    speed_test '48390' 'Marseille, FR'
+    speed_test '46120' 'New York, NY'
 }
 
 io_test() {
