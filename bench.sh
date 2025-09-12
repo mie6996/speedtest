@@ -64,7 +64,7 @@ speed_test() {
         local up_speed=$(awk '/Upload/{print $3" "$4}' ./speedtest-cli/speedtest.log)
         local latency=$(awk '/Latency/{print $2" "$3}' ./speedtest-cli/speedtest.log)
         if [[ -n "${dl_speed}" && -n "${up_speed}" && -n "${latency}" ]]; then
-            printf "\033[0;26m%-25s\033[0;32m%-18s\033[0;31m%-20s\033[0;36m%-9s\033[0m\n" " ${nodeName}" "${up_speed}" "${dl_speed}" "${latency}"
+            printf "\033[0;26m%-25s\033[0;32m%-18s\033[0;31m%-20s\033[0;36m%-9s\033[0m\n" " ${nodeName}" "${dl_speed}" "${up_speed}" "${latency}"
         fi
     fi
 }
@@ -233,7 +233,7 @@ install_speedtest() {
         mkdir -p speedtest-cli && tar zxf speedtest.tgz -C ./speedtest-cli && chmod +x ./speedtest-cli/speedtest
         rm -f speedtest.tgz
     fi
-    printf "%-25s%-18s%-20s%-12s\n" " Node Name" "Upload Speed" "Download Speed" "Latency"
+    printf "%-25s%-18s%-20s%-12s\n" " Node Name" "Download Speed" "Upload Speed" "Latency"
 }
 
 print_intro() {
